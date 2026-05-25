@@ -237,7 +237,7 @@ dealing with open standard formats or proprietary formats.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
     The GeoJSON format can also be read and written with `r pkg("gdalraster")`,
     `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`. `r pkg("yyjsonr")`
-    provides extremely fast GeoJSON parsing and serialization compared to
+    provides fast GeoJSON parsing and serialization compared to
     aforementioned packages.
 -   *Geographic Markup Language (GML):* GML format can be read and written
     with `r pkg("sf")`. Additional GML native reader and writer is provided
@@ -445,10 +445,8 @@ Handling spatial data
 -   The `r pkg("trip")` package extends spatial classes to permit the
     accessing and manipulating of spatial data for animal tracking.
 -   `r pkg("sfnetworks")` connects the `r pkg("sf")` and the `r pkg("tidygraph")`
-    packages for geospatial network analysis. It introduces an `sfnetwork` class
-    that stores both nodes and edges as spatial simple features, allowing for
-    the manipulation, analysis, and visualization of networks such as road or
-    river networks. `r pkg("sfnetworks")` supports tasks such as shortest path
+    packages for geospatial network analysis,
+    supporting tasks such as shortest path
     calculation, routing or spatial joins.
 <!-- Roger, should we link here to papers such as https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13116, https://link.springer.com/article/10.1007%2Fs40823-021-00067-y, https://link.springer.com/article/10.1007/s10109-020-00342-2, etc?-->
 
@@ -574,8 +572,7 @@ Visualizing spatial data
     techniques to produce highly detailed representations of terrain.
 -   `r pkg("tidyterra")` extends `r pkg("ggplot2")` to work natively with
     `r pkg("terra")` objects (rasters and vectors), providing dedicated
-    `geom_spatraster()` and `geom_spatvector()` functions. This allows for
-    the production of thematic maps directly within the `ggplot2` framework.
+    `geom_spatraster()` and `geom_spatvector()` functions. 
 
 ### Packages based on web-mapping frameworks
 
